@@ -50,8 +50,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -60,5 +58,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera permission needed for QR code scanning</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location Permission needed for geofencing and cupon offers.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location Permission needed for geofencing and cupon offers.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location Permission needed for geofencing and cupon offers.</string>
+	<key>APP_ID</key>
+	<string>7701890734418364</string>
+	<key>APP_SECRET</key>
+	<string>TZdpfS4RvXxIzECimZ8BhT22LHumWfVe</string>
 </dict>
 </plist>

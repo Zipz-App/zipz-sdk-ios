@@ -7,15 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1B4D1E24BFA5BE008DFB25 /* ClusterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B4D1D24BFA5BE008DFB25 /* ClusterDetailsViewController.swift */; };
 		D147F56A243A5B3D0075AA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F569243A5B3D0075AA60 /* AppDelegate.swift */; };
 		D147F56C243A5B3D0075AA60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F56B243A5B3D0075AA60 /* SceneDelegate.swift */; };
 		D147F56E243A5B3D0075AA60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F56D243A5B3D0075AA60 /* ViewController.swift */; };
 		D147F571243A5B3D0075AA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D147F56F243A5B3D0075AA60 /* Main.storyboard */; };
-		D147F574243A5B3D0075AA60 /* Zipz_Framework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D147F572243A5B3D0075AA60 /* Zipz_Framework.xcdatamodeld */; };
 		D147F576243A5B400075AA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D147F575243A5B400075AA60 /* Assets.xcassets */; };
 		D147F579243A5B400075AA60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D147F577243A5B400075AA60 /* LaunchScreen.storyboard */; };
 		D147F584243A5B400075AA60 /* Zipz_FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F583243A5B400075AA60 /* Zipz_FrameworkTests.swift */; };
 		D147F58F243A5B400075AA60 /* Zipz_FrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F58E243A5B400075AA60 /* Zipz_FrameworkUITests.swift */; };
+		D147F59D243A720E0075AA60 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F59C243A720E0075AA60 /* PermissionViewController.swift */; };
+		D147F59F243A7E190075AA60 /* ClustersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F59E243A7E190075AA60 /* ClustersTableViewController.swift */; };
+		D1CEF12224E30AB600D12E7B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */; };
+		D1CEF12324E30AB600D12E7B /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */; };
+		D1CEF12424E30AB600D12E7B /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */; };
+		D1CEF12524E30AB600D12E7B /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EB24E30AB600D12E7B /* NetworkRouter.swift */; };
+		D1CEF12624E30AB600D12E7B /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EC24E30AB600D12E7B /* EndpointProtocol.swift */; };
+		D1CEF12724E30AB600D12E7B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0ED24E30AB600D12E7B /* Router.swift */; };
+		D1CEF12824E30AB600D12E7B /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EE24E30AB600D12E7B /* NetworkLogger.swift */; };
+		D1CEF12924E30AB600D12E7B /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EF24E30AB600D12E7B /* HTTPService.swift */; };
+		D1CEF12A24E30AB600D12E7B /* APIStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F124E30AB600D12E7B /* APIStatus.swift */; };
+		D1CEF12B24E30AB600D12E7B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F224E30AB600D12E7B /* APIError.swift */; };
+		D1CEF12C24E30AB600D12E7B /* QRCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F324E30AB600D12E7B /* QRCard.swift */; };
+		D1CEF12D24E30AB600D12E7B /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F424E30AB600D12E7B /* APIData.swift */; };
+		D1CEF12E24E30AB600D12E7B /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F524E30AB600D12E7B /* Staff.swift */; };
+		D1CEF12F24E30AB600D12E7B /* APIUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F624E30AB600D12E7B /* APIUpdate.swift */; };
+		D1CEF13124E30AB600D12E7B /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F824E30AB600D12E7B /* APIResponse.swift */; };
+		D1CEF13224E30AB600D12E7B /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F924E30AB600D12E7B /* APIToken.swift */; };
+		D1CEF13324E30AB600D12E7B /* SavedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FB24E30AB600D12E7B /* SavedDefaults.swift */; };
+		D1CEF13424E30AB600D12E7B /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FC24E30AB600D12E7B /* Debug.swift */; };
+		D1CEF13524E30AB600D12E7B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FD24E30AB600D12E7B /* Device.swift */; };
+		D1CEF13624E30AB600D12E7B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FE24E30AB600D12E7B /* Helper.swift */; };
+		D1CEF13724E30AB600D12E7B /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10124E30AB600D12E7B /* User+Extension.swift */; };
+		D1CEF13824E30AB600D12E7B /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10224E30AB600D12E7B /* Offer.swift */; };
+		D1CEF13924E30AB600D12E7B /* City+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10324E30AB600D12E7B /* City+Extension.swift */; };
+		D1CEF13A24E30AB600D12E7B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10424E30AB600D12E7B /* City.swift */; };
+		D1CEF13B24E30AB600D12E7B /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10524E30AB600D12E7B /* Venue.swift */; };
+		D1CEF13C24E30AB600D12E7B /* Transaction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10624E30AB600D12E7B /* Transaction+Extension.swift */; };
+		D1CEF13D24E30AB600D12E7B /* State+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10724E30AB600D12E7B /* State+Extension.swift */; };
+		D1CEF13F24E30AB600D12E7B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10924E30AB600D12E7B /* State.swift */; };
+		D1CEF14024E30AB600D12E7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10A24E30AB600D12E7B /* User.swift */; };
+		D1CEF14124E30AB600D12E7B /* Offer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10B24E30AB600D12E7B /* Offer+Extension.swift */; };
+		D1CEF14224E30AB600D12E7B /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10C24E30AB600D12E7B /* Hours.swift */; };
+		D1CEF14324E30AB600D12E7B /* Cluster+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10D24E30AB600D12E7B /* Cluster+Extension.swift */; };
+		D1CEF14424E30AB600D12E7B /* Category+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10E24E30AB600D12E7B /* Category+Extension.swift */; };
+		D1CEF14524E30AB600D12E7B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10F24E30AB600D12E7B /* Category.swift */; };
+		D1CEF14624E30AB600D12E7B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11024E30AB600D12E7B /* Transaction.swift */; };
+		D1CEF14724E30AB600D12E7B /* Venue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11124E30AB600D12E7B /* Venue+Extension.swift */; };
+		D1CEF14824E30AB600D12E7B /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11224E30AB600D12E7B /* Cluster.swift */; };
+		D1CEF14924E30AB600D12E7B /* ZipzDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11324E30AB600D12E7B /* ZipzDatabase.swift */; };
+		D1CEF14A24E30AB600D12E7B /* Zipz_Framework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11424E30AB600D12E7B /* Zipz_Framework.xcdatamodeld */; };
+		D1CEF14B24E30AB600D12E7B /* AppEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11824E30AB600D12E7B /* AppEndpoint.swift */; };
+		D1CEF14C24E30AB600D12E7B /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11924E30AB600D12E7B /* AuthEndpoint.swift */; };
+		D1CEF14D24E30AB600D12E7B /* ZipzTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11B24E30AB600D12E7B /* ZipzTransactions.swift */; };
+		D1CEF14E24E30AB600D12E7B /* ZipzVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11C24E30AB600D12E7B /* ZipzVenues.swift */; };
+		D1CEF14F24E30AB600D12E7B /* ZipzOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11D24E30AB600D12E7B /* ZipzOffers.swift */; };
+		D1CEF15024E30AB600D12E7B /* ZipzAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11E24E30AB600D12E7B /* ZipzAuth.swift */; };
+		D1CEF15124E30AB600D12E7B /* ZipzClusters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11F24E30AB600D12E7B /* ZipzClusters.swift */; };
+		D1CEF15224E30AB600D12E7B /* ZipzSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF12024E30AB600D12E7B /* ZipzSDK.swift */; };
+		D1CEF15324E30AB600D12E7B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF12124E30AB600D12E7B /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +86,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC1B4D1D24BFA5BE008DFB25 /* ClusterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterDetailsViewController.swift; sourceTree = "<group>"; };
 		D147F566243A5B3D0075AA60 /* Zipz Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zipz Framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D147F569243A5B3D0075AA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D147F56B243A5B3D0075AA60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D147F56D243A5B3D0075AA60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D147F570243A5B3D0075AA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D147F573243A5B3D0075AA60 /* Zipz_Framework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zipz_Framework.xcdatamodel; sourceTree = "<group>"; };
 		D147F575243A5B400075AA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D147F578243A5B400075AA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D147F57A243A5B400075AA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +101,56 @@
 		D147F58A243A5B400075AA60 /* Zipz FrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zipz FrameworkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D147F58E243A5B400075AA60 /* Zipz_FrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zipz_FrameworkUITests.swift; sourceTree = "<group>"; };
 		D147F590243A5B400075AA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D147F59C243A720E0075AA60 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		D147F59E243A7E190075AA60 /* ClustersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClustersTableViewController.swift; sourceTree = "<group>"; };
+		D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		D1CEF0EB24E30AB600D12E7B /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		D1CEF0EC24E30AB600D12E7B /* EndpointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		D1CEF0ED24E30AB600D12E7B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D1CEF0EE24E30AB600D12E7B /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		D1CEF0EF24E30AB600D12E7B /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		D1CEF0F124E30AB600D12E7B /* APIStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIStatus.swift; sourceTree = "<group>"; };
+		D1CEF0F224E30AB600D12E7B /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		D1CEF0F324E30AB600D12E7B /* QRCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCard.swift; sourceTree = "<group>"; };
+		D1CEF0F424E30AB600D12E7B /* APIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
+		D1CEF0F524E30AB600D12E7B /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		D1CEF0F624E30AB600D12E7B /* APIUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUpdate.swift; sourceTree = "<group>"; };
+		D1CEF0F824E30AB600D12E7B /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		D1CEF0F924E30AB600D12E7B /* APIToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIToken.swift; sourceTree = "<group>"; };
+		D1CEF0FB24E30AB600D12E7B /* SavedDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedDefaults.swift; sourceTree = "<group>"; };
+		D1CEF0FC24E30AB600D12E7B /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		D1CEF0FD24E30AB600D12E7B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		D1CEF0FE24E30AB600D12E7B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D1CEF10124E30AB600D12E7B /* User+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10224E30AB600D12E7B /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		D1CEF10324E30AB600D12E7B /* City+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "City+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10424E30AB600D12E7B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D1CEF10524E30AB600D12E7B /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		D1CEF10624E30AB600D12E7B /* Transaction+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10724E30AB600D12E7B /* State+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10924E30AB600D12E7B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		D1CEF10A24E30AB600D12E7B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1CEF10B24E30AB600D12E7B /* Offer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Offer+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10C24E30AB600D12E7B /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		D1CEF10D24E30AB600D12E7B /* Cluster+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cluster+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10E24E30AB600D12E7B /* Category+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10F24E30AB600D12E7B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D1CEF11024E30AB600D12E7B /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D1CEF11124E30AB600D12E7B /* Venue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF11224E30AB600D12E7B /* Cluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		D1CEF11324E30AB600D12E7B /* ZipzDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzDatabase.swift; sourceTree = "<group>"; };
+		D1CEF11524E30AB600D12E7B /* Zipz_Framework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zipz_Framework.xcdatamodel; sourceTree = "<group>"; };
+		D1CEF11824E30AB600D12E7B /* AppEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEndpoint.swift; sourceTree = "<group>"; };
+		D1CEF11924E30AB600D12E7B /* AuthEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		D1CEF11B24E30AB600D12E7B /* ZipzTransactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzTransactions.swift; sourceTree = "<group>"; };
+		D1CEF11C24E30AB600D12E7B /* ZipzVenues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzVenues.swift; sourceTree = "<group>"; };
+		D1CEF11D24E30AB600D12E7B /* ZipzOffers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzOffers.swift; sourceTree = "<group>"; };
+		D1CEF11E24E30AB600D12E7B /* ZipzAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzAuth.swift; sourceTree = "<group>"; };
+		D1CEF11F24E30AB600D12E7B /* ZipzClusters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzClusters.swift; sourceTree = "<group>"; };
+		D1CEF12024E30AB600D12E7B /* ZipzSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzSDK.swift; sourceTree = "<group>"; };
+		D1CEF12124E30AB600D12E7B /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +178,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5A49842454940200A256C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D147F575243A5B400075AA60 /* Assets.xcassets */,
+				AC5A49852454940D00A256C6 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC5A49852454940D00A256C6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D147F56F243A5B3D0075AA60 /* Main.storyboard */,
+				D147F577243A5B400075AA60 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		D147F55D243A5B3D0075AA60 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +222,12 @@
 				D147F569243A5B3D0075AA60 /* AppDelegate.swift */,
 				D147F56B243A5B3D0075AA60 /* SceneDelegate.swift */,
 				D147F56D243A5B3D0075AA60 /* ViewController.swift */,
-				D147F56F243A5B3D0075AA60 /* Main.storyboard */,
-				D147F575243A5B400075AA60 /* Assets.xcassets */,
-				D147F577243A5B400075AA60 /* LaunchScreen.storyboard */,
+				D147F59C243A720E0075AA60 /* PermissionViewController.swift */,
+				D147F59E243A7E190075AA60 /* ClustersTableViewController.swift */,
+				AC1B4D1D24BFA5BE008DFB25 /* ClusterDetailsViewController.swift */,
+				D1CEF0E424E30AB600D12E7B /* Zipz SDK */,
+				AC5A49842454940200A256C6 /* Resources */,
 				D147F57A243A5B400075AA60 /* Info.plist */,
-				D147F572243A5B3D0075AA60 /* Zipz_Framework.xcdatamodeld */,
 			);
 			path = "Zipz Framework";
 			sourceTree = "<group>";
@@ -129,6 +248,141 @@
 				D147F590243A5B400075AA60 /* Info.plist */,
 			);
 			path = "Zipz FrameworkUITests";
+			sourceTree = "<group>";
+		};
+		D1CEF0E424E30AB600D12E7B /* Zipz SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0FF24E30AB600D12E7B /* CoreData */,
+				D1CEF0FA24E30AB600D12E7B /* API Util */,
+				D1CEF0F024E30AB600D12E7B /* API Codable */,
+				D1CEF11624E30AB600D12E7B /* API Bridge */,
+				D1CEF0E524E30AB600D12E7B /* AWARequest */,
+			);
+			path = "Zipz SDK";
+			sourceTree = "<group>";
+		};
+		D1CEF0E524E30AB600D12E7B /* AWARequest */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0E624E30AB600D12E7B /* Encoding */,
+				D1CEF0EA24E30AB600D12E7B /* Service */,
+			);
+			path = AWARequest;
+			sourceTree = "<group>";
+		};
+		D1CEF0E624E30AB600D12E7B /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */,
+				D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */,
+				D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		D1CEF0EA24E30AB600D12E7B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0EB24E30AB600D12E7B /* NetworkRouter.swift */,
+				D1CEF0EC24E30AB600D12E7B /* EndpointProtocol.swift */,
+				D1CEF0ED24E30AB600D12E7B /* Router.swift */,
+				D1CEF0EE24E30AB600D12E7B /* NetworkLogger.swift */,
+				D1CEF0EF24E30AB600D12E7B /* HTTPService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D1CEF0F024E30AB600D12E7B /* API Codable */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0F124E30AB600D12E7B /* APIStatus.swift */,
+				D1CEF0F224E30AB600D12E7B /* APIError.swift */,
+				D1CEF0F324E30AB600D12E7B /* QRCard.swift */,
+				D1CEF0F424E30AB600D12E7B /* APIData.swift */,
+				D1CEF0F524E30AB600D12E7B /* Staff.swift */,
+				D1CEF0F624E30AB600D12E7B /* APIUpdate.swift */,
+				D1CEF0F824E30AB600D12E7B /* APIResponse.swift */,
+				D1CEF0F924E30AB600D12E7B /* APIToken.swift */,
+			);
+			path = "API Codable";
+			sourceTree = "<group>";
+		};
+		D1CEF0FA24E30AB600D12E7B /* API Util */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0FB24E30AB600D12E7B /* SavedDefaults.swift */,
+				D1CEF0FC24E30AB600D12E7B /* Debug.swift */,
+				D1CEF0FD24E30AB600D12E7B /* Device.swift */,
+				D1CEF0FE24E30AB600D12E7B /* Helper.swift */,
+			);
+			path = "API Util";
+			sourceTree = "<group>";
+		};
+		D1CEF0FF24E30AB600D12E7B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF10024E30AB600D12E7B /* Models */,
+				D1CEF11324E30AB600D12E7B /* ZipzDatabase.swift */,
+				D1CEF11424E30AB600D12E7B /* Zipz_Framework.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D1CEF10024E30AB600D12E7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF10F24E30AB600D12E7B /* Category.swift */,
+				D1CEF10E24E30AB600D12E7B /* Category+Extension.swift */,
+				D1CEF10424E30AB600D12E7B /* City.swift */,
+				D1CEF10324E30AB600D12E7B /* City+Extension.swift */,
+				D1CEF11224E30AB600D12E7B /* Cluster.swift */,
+				D1CEF10D24E30AB600D12E7B /* Cluster+Extension.swift */,
+				D1CEF10C24E30AB600D12E7B /* Hours.swift */,
+				D1CEF10224E30AB600D12E7B /* Offer.swift */,
+				D1CEF10B24E30AB600D12E7B /* Offer+Extension.swift */,
+				D1CEF10924E30AB600D12E7B /* State.swift */,
+				D1CEF10724E30AB600D12E7B /* State+Extension.swift */,
+				D1CEF11024E30AB600D12E7B /* Transaction.swift */,
+				D1CEF10624E30AB600D12E7B /* Transaction+Extension.swift */,
+				D1CEF10A24E30AB600D12E7B /* User.swift */,
+				D1CEF10124E30AB600D12E7B /* User+Extension.swift */,
+				D1CEF10524E30AB600D12E7B /* Venue.swift */,
+				D1CEF11124E30AB600D12E7B /* Venue+Extension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1CEF11624E30AB600D12E7B /* API Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF12124E30AB600D12E7B /* APIManager.swift */,
+				D1CEF11724E30AB600D12E7B /* Endpoints */,
+				D1CEF11A24E30AB600D12E7B /* App */,
+			);
+			path = "API Bridge";
+			sourceTree = "<group>";
+		};
+		D1CEF11724E30AB600D12E7B /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF11824E30AB600D12E7B /* AppEndpoint.swift */,
+				D1CEF11924E30AB600D12E7B /* AuthEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		D1CEF11A24E30AB600D12E7B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF11B24E30AB600D12E7B /* ZipzTransactions.swift */,
+				D1CEF11C24E30AB600D12E7B /* ZipzVenues.swift */,
+				D1CEF11D24E30AB600D12E7B /* ZipzOffers.swift */,
+				D1CEF11E24E30AB600D12E7B /* ZipzAuth.swift */,
+				D1CEF11F24E30AB600D12E7B /* ZipzClusters.swift */,
+				D1CEF12024E30AB600D12E7B /* ZipzSDK.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +516,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CEF12324E30AB600D12E7B /* URLParameterEncoder.swift in Sources */,
+				D1CEF14224E30AB600D12E7B /* Hours.swift in Sources */,
+				D1CEF13D24E30AB600D12E7B /* State+Extension.swift in Sources */,
+				D1CEF12224E30AB600D12E7B /* ParameterEncoding.swift in Sources */,
 				D147F56E243A5B3D0075AA60 /* ViewController.swift in Sources */,
-				D147F574243A5B3D0075AA60 /* Zipz_Framework.xcdatamodeld in Sources */,
+				D1CEF12C24E30AB600D12E7B /* QRCard.swift in Sources */,
 				D147F56A243A5B3D0075AA60 /* AppDelegate.swift in Sources */,
+				D1CEF13624E30AB600D12E7B /* Helper.swift in Sources */,
+				D1CEF14C24E30AB600D12E7B /* AuthEndpoint.swift in Sources */,
+				D1CEF14424E30AB600D12E7B /* Category+Extension.swift in Sources */,
+				D1CEF13124E30AB600D12E7B /* APIResponse.swift in Sources */,
+				D1CEF14624E30AB600D12E7B /* Transaction.swift in Sources */,
+				D1CEF13C24E30AB600D12E7B /* Transaction+Extension.swift in Sources */,
+				D1CEF13824E30AB600D12E7B /* Offer.swift in Sources */,
+				D1CEF14D24E30AB600D12E7B /* ZipzTransactions.swift in Sources */,
+				D1CEF14B24E30AB600D12E7B /* AppEndpoint.swift in Sources */,
+				D1CEF14324E30AB600D12E7B /* Cluster+Extension.swift in Sources */,
+				D1CEF12724E30AB600D12E7B /* Router.swift in Sources */,
+				D1CEF13B24E30AB600D12E7B /* Venue.swift in Sources */,
+				D1CEF12924E30AB600D12E7B /* HTTPService.swift in Sources */,
+				D1CEF13224E30AB600D12E7B /* APIToken.swift in Sources */,
+				D1CEF13324E30AB600D12E7B /* SavedDefaults.swift in Sources */,
+				D1CEF14124E30AB600D12E7B /* Offer+Extension.swift in Sources */,
+				D1CEF12F24E30AB600D12E7B /* APIUpdate.swift in Sources */,
+				D1CEF12824E30AB600D12E7B /* NetworkLogger.swift in Sources */,
 				D147F56C243A5B3D0075AA60 /* SceneDelegate.swift in Sources */,
+				D1CEF13524E30AB600D12E7B /* Device.swift in Sources */,
+				D1CEF12424E30AB600D12E7B /* JSONParameterEncoder.swift in Sources */,
+				D1CEF12624E30AB600D12E7B /* EndpointProtocol.swift in Sources */,
+				D1CEF14724E30AB600D12E7B /* Venue+Extension.swift in Sources */,
+				D147F59D243A720E0075AA60 /* PermissionViewController.swift in Sources */,
+				D1CEF14E24E30AB600D12E7B /* ZipzVenues.swift in Sources */,
+				D1CEF14024E30AB600D12E7B /* User.swift in Sources */,
+				D1CEF13F24E30AB600D12E7B /* State.swift in Sources */,
+				D1CEF12D24E30AB600D12E7B /* APIData.swift in Sources */,
+				D1CEF14F24E30AB600D12E7B /* ZipzOffers.swift in Sources */,
+				D1CEF14A24E30AB600D12E7B /* Zipz_Framework.xcdatamodeld in Sources */,
+				D1CEF12E24E30AB600D12E7B /* Staff.swift in Sources */,
+				D1CEF13A24E30AB600D12E7B /* City.swift in Sources */,
+				D1CEF15124E30AB600D12E7B /* ZipzClusters.swift in Sources */,
+				D1CEF12524E30AB600D12E7B /* NetworkRouter.swift in Sources */,
+				AC1B4D1E24BFA5BE008DFB25 /* ClusterDetailsViewController.swift in Sources */,
+				D1CEF13924E30AB600D12E7B /* City+Extension.swift in Sources */,
+				D1CEF13424E30AB600D12E7B /* Debug.swift in Sources */,
+				D1CEF15024E30AB600D12E7B /* ZipzAuth.swift in Sources */,
+				D1CEF12B24E30AB600D12E7B /* APIError.swift in Sources */,
+				D1CEF15324E30AB600D12E7B /* APIManager.swift in Sources */,
+				D1CEF14924E30AB600D12E7B /* ZipzDatabase.swift in Sources */,
+				D147F59F243A7E190075AA60 /* ClustersTableViewController.swift in Sources */,
+				D1CEF13724E30AB600D12E7B /* User+Extension.swift in Sources */,
+				D1CEF12A24E30AB600D12E7B /* APIStatus.swift in Sources */,
+				D1CEF14524E30AB600D12E7B /* Category.swift in Sources */,
+				D1CEF15224E30AB600D12E7B /* ZipzSDK.swift in Sources */,
+				D1CEF14824E30AB600D12E7B /* Cluster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,16 +743,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UB568EY4Y;
+				DEVELOPMENT_TEAM = 2W4R999L7M;
 				INFOPLIST_FILE = "Zipz Framework/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.zipz.Zipz-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,16 +762,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UB568EY4Y;
+				DEVELOPMENT_TEAM = 2W4R999L7M;
 				INFOPLIST_FILE = "Zipz Framework/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.zipz.Zipz-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -596,12 +902,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D147F572243A5B3D0075AA60 /* Zipz_Framework.xcdatamodeld */ = {
+		D1CEF11424E30AB600D12E7B /* Zipz_Framework.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D147F573243A5B3D0075AA60 /* Zipz_Framework.xcdatamodel */,
+				D1CEF11524E30AB600D12E7B /* Zipz_Framework.xcdatamodel */,
 			);
-			currentVersion = D147F573243A5B3D0075AA60 /* Zipz_Framework.xcdatamodel */;
+			currentVersion = D1CEF11524E30AB600D12E7B /* Zipz_Framework.xcdatamodel */;
 			path = Zipz_Framework.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
