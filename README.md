@@ -29,5 +29,15 @@ At the moment the only way to install Zipz SDK. Clone or download [framework](ht
    Coming soon...
 ```
 
+## Add Zipz App ID and App Secret
 
+In your project `Info.plist` file add `APP_ID` and `APP_SECRET` keys: 
+
+```xml
+    <key>APP_ID</key>
+    <string>YOUR_APP_ID_STRING</string>
+    <key>APP_SECRET</key>
+    <string>YOUR_APP_SECRET_STRING</string>
+```
+By adding those two keys you are now ready to use Zipz SDK framework.
 
