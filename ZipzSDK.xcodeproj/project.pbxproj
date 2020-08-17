@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1A3B8F124EADC2C00D2B0B8 /* ZipzSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A3B8E324EADC2C00D2B0B8 /* ZipzSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1A3B8F824EAEE3100D2B0B8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF12124E30AB600D12E7B /* APIManager.swift */; };
+		D1A3B8F924EAEE3100D2B0B8 /* AppEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11824E30AB600D12E7B /* AppEndpoint.swift */; };
+		D1A3B8FA24EAEE3100D2B0B8 /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11924E30AB600D12E7B /* AuthEndpoint.swift */; };
+		D1A3B8FB24EAEE3100D2B0B8 /* ZipzTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11B24E30AB600D12E7B /* ZipzTransactions.swift */; };
+		D1A3B8FC24EAEE3100D2B0B8 /* ZipzVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11C24E30AB600D12E7B /* ZipzVenues.swift */; };
+		D1A3B8FD24EAEE3100D2B0B8 /* ZipzOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11D24E30AB600D12E7B /* ZipzOffers.swift */; };
+		D1A3B8FE24EAEE3100D2B0B8 /* ZipzAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11E24E30AB600D12E7B /* ZipzAuth.swift */; };
+		D1A3B8FF24EAEE3100D2B0B8 /* ZipzClusters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11F24E30AB600D12E7B /* ZipzClusters.swift */; };
+		D1A3B90024EAEE3100D2B0B8 /* ZipzSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF12024E30AB600D12E7B /* ZipzSDK.swift */; };
+		D1A3B90124EAEE3100D2B0B8 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */; };
+		D1A3B90224EAEE3100D2B0B8 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */; };
+		D1A3B90324EAEE3100D2B0B8 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */; };
+		D1A3B90424EAEE3100D2B0B8 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EB24E30AB600D12E7B /* NetworkRouter.swift */; };
+		D1A3B90524EAEE3100D2B0B8 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EC24E30AB600D12E7B /* EndpointProtocol.swift */; };
+		D1A3B90624EAEE3100D2B0B8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0ED24E30AB600D12E7B /* Router.swift */; };
+		D1A3B90724EAEE3100D2B0B8 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EE24E30AB600D12E7B /* NetworkLogger.swift */; };
+		D1A3B90824EAEE3100D2B0B8 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0EF24E30AB600D12E7B /* HTTPService.swift */; };
+		D1A3B90924EAEE5000D2B0B8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10F24E30AB600D12E7B /* Category.swift */; };
+		D1A3B90A24EAEE5000D2B0B8 /* Category+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10E24E30AB600D12E7B /* Category+Extension.swift */; };
+		D1A3B90B24EAEE5000D2B0B8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10424E30AB600D12E7B /* City.swift */; };
+		D1A3B90C24EAEE5000D2B0B8 /* City+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10324E30AB600D12E7B /* City+Extension.swift */; };
+		D1A3B90D24EAEE5000D2B0B8 /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11224E30AB600D12E7B /* Cluster.swift */; };
+		D1A3B90E24EAEE5000D2B0B8 /* Cluster+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10D24E30AB600D12E7B /* Cluster+Extension.swift */; };
+		D1A3B90F24EAEE5000D2B0B8 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10C24E30AB600D12E7B /* Hours.swift */; };
+		D1A3B91024EAEE5000D2B0B8 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10224E30AB600D12E7B /* Offer.swift */; };
+		D1A3B91124EAEE5000D2B0B8 /* Offer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10B24E30AB600D12E7B /* Offer+Extension.swift */; };
+		D1A3B91224EAEE5000D2B0B8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10924E30AB600D12E7B /* State.swift */; };
+		D1A3B91324EAEE5000D2B0B8 /* State+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10724E30AB600D12E7B /* State+Extension.swift */; };
+		D1A3B91424EAEE5000D2B0B8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11024E30AB600D12E7B /* Transaction.swift */; };
+		D1A3B91524EAEE5000D2B0B8 /* Transaction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10624E30AB600D12E7B /* Transaction+Extension.swift */; };
+		D1A3B91624EAEE5000D2B0B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10A24E30AB600D12E7B /* User.swift */; };
+		D1A3B91724EAEE5000D2B0B8 /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10124E30AB600D12E7B /* User+Extension.swift */; };
+		D1A3B91824EAEE5000D2B0B8 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF10524E30AB600D12E7B /* Venue.swift */; };
+		D1A3B91924EAEE5000D2B0B8 /* Venue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11124E30AB600D12E7B /* Venue+Extension.swift */; };
+		D1A3B91A24EAEE5000D2B0B8 /* ZipzDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11324E30AB600D12E7B /* ZipzDatabase.swift */; };
+		D1A3B91B24EAEE5000D2B0B8 /* SavedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FB24E30AB600D12E7B /* SavedDefaults.swift */; };
+		D1A3B91C24EAEE5000D2B0B8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FC24E30AB600D12E7B /* Enums.swift */; };
+		D1A3B91D24EAEE5000D2B0B8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FD24E30AB600D12E7B /* Device.swift */; };
+		D1A3B91E24EAEE5000D2B0B8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0FE24E30AB600D12E7B /* Helper.swift */; };
+		D1A3B91F24EAEE5000D2B0B8 /* APIStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F124E30AB600D12E7B /* APIStatus.swift */; };
+		D1A3B92024EAEE5000D2B0B8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F224E30AB600D12E7B /* APIError.swift */; };
+		D1A3B92124EAEE5000D2B0B8 /* QRCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F324E30AB600D12E7B /* QRCard.swift */; };
+		D1A3B92224EAEE5000D2B0B8 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F424E30AB600D12E7B /* APIData.swift */; };
+		D1A3B92324EAEE5000D2B0B8 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F524E30AB600D12E7B /* Staff.swift */; };
+		D1A3B92424EAEE5000D2B0B8 /* APIUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F624E30AB600D12E7B /* APIUpdate.swift */; };
+		D1A3B92524EAEE5000D2B0B8 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F824E30AB600D12E7B /* APIResponse.swift */; };
+		D1A3B92624EAEE5000D2B0B8 /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0F924E30AB600D12E7B /* APIToken.swift */; };
+		D1A3B92724EAEE5800D2B0B8 /* ZipzSDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF11424E30AB600D12E7B /* ZipzSDK.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipzSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A3B8E324EADC2C00D2B0B8 /* ZipzSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipzSDK.h; sourceTree = "<group>"; };
+		D1A3B8E424EADC2C00D2B0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		D1CEF0EB24E30AB600D12E7B /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		D1CEF0EC24E30AB600D12E7B /* EndpointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		D1CEF0ED24E30AB600D12E7B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D1CEF0EE24E30AB600D12E7B /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		D1CEF0EF24E30AB600D12E7B /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		D1CEF0F124E30AB600D12E7B /* APIStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIStatus.swift; sourceTree = "<group>"; };
+		D1CEF0F224E30AB600D12E7B /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		D1CEF0F324E30AB600D12E7B /* QRCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCard.swift; sourceTree = "<group>"; };
+		D1CEF0F424E30AB600D12E7B /* APIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
+		D1CEF0F524E30AB600D12E7B /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		D1CEF0F624E30AB600D12E7B /* APIUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUpdate.swift; sourceTree = "<group>"; };
+		D1CEF0F824E30AB600D12E7B /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		D1CEF0F924E30AB600D12E7B /* APIToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIToken.swift; sourceTree = "<group>"; };
+		D1CEF0FB24E30AB600D12E7B /* SavedDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedDefaults.swift; sourceTree = "<group>"; };
+		D1CEF0FC24E30AB600D12E7B /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		D1CEF0FD24E30AB600D12E7B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		D1CEF0FE24E30AB600D12E7B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D1CEF10124E30AB600D12E7B /* User+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10224E30AB600D12E7B /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		D1CEF10324E30AB600D12E7B /* City+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "City+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10424E30AB600D12E7B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D1CEF10524E30AB600D12E7B /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		D1CEF10624E30AB600D12E7B /* Transaction+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10724E30AB600D12E7B /* State+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "State+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10924E30AB600D12E7B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		D1CEF10A24E30AB600D12E7B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1CEF10B24E30AB600D12E7B /* Offer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Offer+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10C24E30AB600D12E7B /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		D1CEF10D24E30AB600D12E7B /* Cluster+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cluster+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10E24E30AB600D12E7B /* Category+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF10F24E30AB600D12E7B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D1CEF11024E30AB600D12E7B /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D1CEF11124E30AB600D12E7B /* Venue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+Extension.swift"; sourceTree = "<group>"; };
+		D1CEF11224E30AB600D12E7B /* Cluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		D1CEF11324E30AB600D12E7B /* ZipzDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzDatabase.swift; sourceTree = "<group>"; };
+		D1CEF11524E30AB600D12E7B /* Zipz_Framework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zipz_Framework.xcdatamodel; sourceTree = "<group>"; };
+		D1CEF11824E30AB600D12E7B /* AppEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEndpoint.swift; sourceTree = "<group>"; };
+		D1CEF11924E30AB600D12E7B /* AuthEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		D1CEF11B24E30AB600D12E7B /* ZipzTransactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzTransactions.swift; sourceTree = "<group>"; };
+		D1CEF11C24E30AB600D12E7B /* ZipzVenues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzVenues.swift; sourceTree = "<group>"; };
+		D1CEF11D24E30AB600D12E7B /* ZipzOffers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzOffers.swift; sourceTree = "<group>"; };
+		D1CEF11E24E30AB600D12E7B /* ZipzAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzAuth.swift; sourceTree = "<group>"; };
+		D1CEF11F24E30AB600D12E7B /* ZipzClusters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzClusters.swift; sourceTree = "<group>"; };
+		D1CEF12024E30AB600D12E7B /* ZipzSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipzSDK.swift; sourceTree = "<group>"; };
+		D1CEF12124E30AB600D12E7B /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1A3B8DE24EADC2C00D2B0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D147F55D243A5B3D0075AA60 = {
+			isa = PBXGroup;
+			children = (
+				D1A3B8E224EADC2C00D2B0B8 /* ZipzSDK */,
+				D147F567243A5B3D0075AA60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D147F567243A5B3D0075AA60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1A3B8E224EADC2C00D2B0B8 /* ZipzSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF11624E30AB600D12E7B /* API Bridge */,
+				D1CEF0FF24E30AB600D12E7B /* CoreData */,
+				D1CEF0FA24E30AB600D12E7B /* API Util */,
+				D1CEF0F024E30AB600D12E7B /* API Codable */,
+				D1CEF0E524E30AB600D12E7B /* AWARequest */,
+				D1A3B8E324EADC2C00D2B0B8 /* ZipzSDK.h */,
+				D1A3B8E424EADC2C00D2B0B8 /* Info.plist */,
+			);
+			path = ZipzSDK;
+			sourceTree = "<group>";
+		};
+		D1CEF0E524E30AB600D12E7B /* AWARequest */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0E624E30AB600D12E7B /* Encoding */,
+				D1CEF0EA24E30AB600D12E7B /* Service */,
+			);
+			path = AWARequest;
+			sourceTree = "<group>";
+		};
+		D1CEF0E624E30AB600D12E7B /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */,
+				D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */,
+				D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		D1CEF0EA24E30AB600D12E7B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0EB24E30AB600D12E7B /* NetworkRouter.swift */,
+				D1CEF0EC24E30AB600D12E7B /* EndpointProtocol.swift */,
+				D1CEF0ED24E30AB600D12E7B /* Router.swift */,
+				D1CEF0EE24E30AB600D12E7B /* NetworkLogger.swift */,
+				D1CEF0EF24E30AB600D12E7B /* HTTPService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D1CEF0F024E30AB600D12E7B /* API Codable */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0F124E30AB600D12E7B /* APIStatus.swift */,
+				D1CEF0F224E30AB600D12E7B /* APIError.swift */,
+				D1CEF0F324E30AB600D12E7B /* QRCard.swift */,
+				D1CEF0F424E30AB600D12E7B /* APIData.swift */,
+				D1CEF0F524E30AB600D12E7B /* Staff.swift */,
+				D1CEF0F624E30AB600D12E7B /* APIUpdate.swift */,
+				D1CEF0F824E30AB600D12E7B /* APIResponse.swift */,
+				D1CEF0F924E30AB600D12E7B /* APIToken.swift */,
+			);
+			path = "API Codable";
+			sourceTree = "<group>";
+		};
+		D1CEF0FA24E30AB600D12E7B /* API Util */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF0FB24E30AB600D12E7B /* SavedDefaults.swift */,
+				D1CEF0FC24E30AB600D12E7B /* Enums.swift */,
+				D1CEF0FD24E30AB600D12E7B /* Device.swift */,
+				D1CEF0FE24E30AB600D12E7B /* Helper.swift */,
+			);
+			path = "API Util";
+			sourceTree = "<group>";
+		};
+		D1CEF0FF24E30AB600D12E7B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF10024E30AB600D12E7B /* Models */,
+				D1CEF11324E30AB600D12E7B /* ZipzDatabase.swift */,
+				D1CEF11424E30AB600D12E7B /* ZipzSDK.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D1CEF10024E30AB600D12E7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF10F24E30AB600D12E7B /* Category.swift */,
+				D1CEF10E24E30AB600D12E7B /* Category+Extension.swift */,
+				D1CEF10424E30AB600D12E7B /* City.swift */,
+				D1CEF10324E30AB600D12E7B /* City+Extension.swift */,
+				D1CEF11224E30AB600D12E7B /* Cluster.swift */,
+				D1CEF10D24E30AB600D12E7B /* Cluster+Extension.swift */,
+				D1CEF10C24E30AB600D12E7B /* Hours.swift */,
+				D1CEF10224E30AB600D12E7B /* Offer.swift */,
+				D1CEF10B24E30AB600D12E7B /* Offer+Extension.swift */,
+				D1CEF10924E30AB600D12E7B /* State.swift */,
+				D1CEF10724E30AB600D12E7B /* State+Extension.swift */,
+				D1CEF11024E30AB600D12E7B /* Transaction.swift */,
+				D1CEF10624E30AB600D12E7B /* Transaction+Extension.swift */,
+				D1CEF10A24E30AB600D12E7B /* User.swift */,
+				D1CEF10124E30AB600D12E7B /* User+Extension.swift */,
+				D1CEF10524E30AB600D12E7B /* Venue.swift */,
+				D1CEF11124E30AB600D12E7B /* Venue+Extension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1CEF11624E30AB600D12E7B /* API Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF12024E30AB600D12E7B /* ZipzSDK.swift */,
+				D1CEF12124E30AB600D12E7B /* APIManager.swift */,
+				D1CEF11724E30AB600D12E7B /* Endpoints */,
+				D1CEF11A24E30AB600D12E7B /* App */,
+			);
+			path = "API Bridge";
+			sourceTree = "<group>";
+		};
+		D1CEF11724E30AB600D12E7B /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF11824E30AB600D12E7B /* AppEndpoint.swift */,
+				D1CEF11924E30AB600D12E7B /* AuthEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		D1CEF11A24E30AB600D12E7B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D1CEF11B24E30AB600D12E7B /* ZipzTransactions.swift */,
+				D1CEF11C24E30AB600D12E7B /* ZipzVenues.swift */,
+				D1CEF11D24E30AB600D12E7B /* ZipzOffers.swift */,
+				D1CEF11E24E30AB600D12E7B /* ZipzAuth.swift */,
+				D1CEF11F24E30AB600D12E7B /* ZipzClusters.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D1A3B8DC24EADC2C00D2B0B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A3B8F124EADC2C00D2B0B8 /* ZipzSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D1A3B8E024EADC2C00D2B0B8 /* ZipzSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1A3B8F224EADC2C00D2B0B8 /* Build configuration list for PBXNativeTarget "ZipzSDK" */;
+			buildPhases = (
+				D1A3B8DC24EADC2C00D2B0B8 /* Headers */,
+				D1A3B8DD24EADC2C00D2B0B8 /* Sources */,
+				D1A3B8DE24EADC2C00D2B0B8 /* Frameworks */,
+				D1A3B8DF24EADC2C00D2B0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipzSDK;
+			productName = ZipzSDK;
+			productReference = D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D147F55E243A5B3D0075AA60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Aware;
+				TargetAttributes = {
+					D1A3B8E024EADC2C00D2B0B8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D147F561243A5B3D0075AA60 /* Build configuration list for PBXProject "ZipzSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D147F55D243A5B3D0075AA60;
+			productRefGroup = D147F567243A5B3D0075AA60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1A3B8E024EADC2C00D2B0B8 /* ZipzSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1A3B8DF24EADC2C00D2B0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1A3B8DD24EADC2C00D2B0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A3B8F924EAEE3100D2B0B8 /* AppEndpoint.swift in Sources */,
+				D1A3B90224EAEE3100D2B0B8 /* URLParameterEncoder.swift in Sources */,
+				D1A3B92324EAEE5000D2B0B8 /* Staff.swift in Sources */,
+				D1A3B8F824EAEE3100D2B0B8 /* APIManager.swift in Sources */,
+				D1A3B90A24EAEE5000D2B0B8 /* Category+Extension.swift in Sources */,
+				D1A3B91824EAEE5000D2B0B8 /* Venue.swift in Sources */,
+				D1A3B91624EAEE5000D2B0B8 /* User.swift in Sources */,
+				D1A3B92524EAEE5000D2B0B8 /* APIResponse.swift in Sources */,
+				D1A3B91C24EAEE5000D2B0B8 /* Enums.swift in Sources */,
+				D1A3B90124EAEE3100D2B0B8 /* ParameterEncoding.swift in Sources */,
+				D1A3B91224EAEE5000D2B0B8 /* State.swift in Sources */,
+				D1A3B8FC24EAEE3100D2B0B8 /* ZipzVenues.swift in Sources */,
+				D1A3B91A24EAEE5000D2B0B8 /* ZipzDatabase.swift in Sources */,
+				D1A3B92724EAEE5800D2B0B8 /* ZipzSDK.xcdatamodeld in Sources */,
+				D1A3B90D24EAEE5000D2B0B8 /* Cluster.swift in Sources */,
+				D1A3B90F24EAEE5000D2B0B8 /* Hours.swift in Sources */,
+				D1A3B91D24EAEE5000D2B0B8 /* Device.swift in Sources */,
+				D1A3B91124EAEE5000D2B0B8 /* Offer+Extension.swift in Sources */,
+				D1A3B90C24EAEE5000D2B0B8 /* City+Extension.swift in Sources */,
+				D1A3B90B24EAEE5000D2B0B8 /* City.swift in Sources */,
+				D1A3B90924EAEE5000D2B0B8 /* Category.swift in Sources */,
+				D1A3B91324EAEE5000D2B0B8 /* State+Extension.swift in Sources */,
+				D1A3B8FD24EAEE3100D2B0B8 /* ZipzOffers.swift in Sources */,
+				D1A3B90524EAEE3100D2B0B8 /* EndpointProtocol.swift in Sources */,
+				D1A3B92424EAEE5000D2B0B8 /* APIUpdate.swift in Sources */,
+				D1A3B91524EAEE5000D2B0B8 /* Transaction+Extension.swift in Sources */,
+				D1A3B90E24EAEE5000D2B0B8 /* Cluster+Extension.swift in Sources */,
+				D1A3B91E24EAEE5000D2B0B8 /* Helper.swift in Sources */,
+				D1A3B91F24EAEE5000D2B0B8 /* APIStatus.swift in Sources */,
+				D1A3B91B24EAEE5000D2B0B8 /* SavedDefaults.swift in Sources */,
+				D1A3B92024EAEE5000D2B0B8 /* APIError.swift in Sources */,
+				D1A3B91024EAEE5000D2B0B8 /* Offer.swift in Sources */,
+				D1A3B90824EAEE3100D2B0B8 /* HTTPService.swift in Sources */,
+				D1A3B90624EAEE3100D2B0B8 /* Router.swift in Sources */,
+				D1A3B91724EAEE5000D2B0B8 /* User+Extension.swift in Sources */,
+				D1A3B90724EAEE3100D2B0B8 /* NetworkLogger.swift in Sources */,
+				D1A3B92624EAEE5000D2B0B8 /* APIToken.swift in Sources */,
+				D1A3B8FA24EAEE3100D2B0B8 /* AuthEndpoint.swift in Sources */,
+				D1A3B8FB24EAEE3100D2B0B8 /* ZipzTransactions.swift in Sources */,
+				D1A3B91924EAEE5000D2B0B8 /* Venue+Extension.swift in Sources */,
+				D1A3B90424EAEE3100D2B0B8 /* NetworkRouter.swift in Sources */,
+				D1A3B92124EAEE5000D2B0B8 /* QRCard.swift in Sources */,
+				D1A3B90324EAEE3100D2B0B8 /* JSONParameterEncoder.swift in Sources */,
+				D1A3B90024EAEE3100D2B0B8 /* ZipzSDK.swift in Sources */,
+				D1A3B91424EAEE5000D2B0B8 /* Transaction.swift in Sources */,
+				D1A3B92224EAEE5000D2B0B8 /* APIData.swift in Sources */,
+				D1A3B8FE24EAEE3100D2B0B8 /* ZipzAuth.swift in Sources */,
+				D1A3B8FF24EAEE3100D2B0B8 /* ZipzClusters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D147F591243A5B400075AA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D147F592243A5B400075AA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1A3B8F324EADC2C00D2B0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZipzSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1A3B8F424EADC2C00D2B0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZipzSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D147F561243A5B3D0075AA60 /* Build configuration list for PBXProject "ZipzSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D147F591243A5B400075AA60 /* Debug */,
+				D147F592243A5B400075AA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1A3B8F224EADC2C00D2B0B8 /* Build configuration list for PBXNativeTarget "ZipzSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A3B8F324EADC2C00D2B0B8 /* Debug */,
+				D1A3B8F424EADC2C00D2B0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D1CEF11424E30AB600D12E7B /* ZipzSDK.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D1CEF11524E30AB600D12E7B /* Zipz_Framework.xcdatamodel */,
+			);
+			currentVersion = D1CEF11524E30AB600D12E7B /* Zipz_Framework.xcdatamodel */;
+			path = ZipzSDK.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D147F55E243A5B3D0075AA60 /* Project object */;
+}

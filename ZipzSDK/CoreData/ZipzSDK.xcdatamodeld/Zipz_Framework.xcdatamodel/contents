@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="ZipzSDK.Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="City" representedClassName="ZipzSDK.City" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="stateID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Cluster" representedClassName="ZipzSDK.Cluster" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="cityID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="neighborhood" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <attribute name="venueIDs" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <entity name="Offer" representedClassName="ZipzSDK.Offer" syncable="YES">
+        <attribute name="categories" optional="YES" attributeType="Transformable"/>
+        <attribute name="expiration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fullPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="offerPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="State" representedClassName="ZipzSDK.State" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Transaction" representedClassName="ZipzSDK.Transaction" syncable="YES">
+        <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="offerID" optional="YES" attributeType="String"/>
+        <attribute name="qrValue" optional="YES" attributeType="String"/>
+        <attribute name="reddemedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="staffName" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <attribute name="venueID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName="ZipzSDK.User" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="cpf" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Venue" representedClassName="ZipzSDK.Venue" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="categories" optional="YES" attributeType="Transformable"/>
+        <attribute name="cityID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fri" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mon" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="neighborhood" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <attribute name="sat" optional="YES" attributeType="String"/>
+        <attribute name="sufix" optional="YES" attributeType="String"/>
+        <attribute name="sun" optional="YES" attributeType="String"/>
+        <attribute name="thu" optional="YES" attributeType="String"/>
+        <attribute name="tue" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <attribute name="wed" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-909" positionY="-270" width="128" height="58"/>
+        <element name="City" positionX="-63" positionY="45" width="128" height="88"/>
+        <element name="Cluster" positionX="-937.1953125" positionY="-33.390625" width="128" height="238"/>
+        <element name="Offer" positionX="-1075.0859375" positionY="-433.28125" width="128" height="208"/>
+        <element name="State" positionX="-285.8359375" positionY="-212.6328125" width="128" height="73"/>
+        <element name="Transaction" positionX="-899.41796875" positionY="-436.328125" width="128" height="148"/>
+        <element name="User" positionX="-1071.53515625" positionY="-993.15234375" width="128" height="178"/>
+        <element name="Venue" positionX="-692.7890625" positionY="-397.96484375" width="128" height="328"/>
+    </elements>
+</model>
