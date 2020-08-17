@@ -12,13 +12,16 @@ class ZipzClusters: ZipzSDK
 {
     private let router = Router<AppAPI>()
     
-    public func all(type: ClusterType? = nil, state: String? = nil, city: String? = nil, completion: @escaping (_ clusters: [Cluster]?, _ error: String?)->())
-    {
+    public func all(fetch: FetchType = .update,
+                    type: ClusterType? = nil,
+                    state: String? = nil,
+                    city: String? = nil,
+                    completion: @escaping (_ clusters: [Cluster]?, _ error: String?)->()) {
+        
+        
         var parameters: [String:Any] = [:]
         
-        
-        
-        if let savedDate = SavedDefaults.getLastCallTime(for: "venue_clusters"), let _ = Cluster.all() {
+        if let savedDate = SavedDefaults.getLastCallTime(for: "venue_clusters"), fetch == .update {
             parameters["datetime"] = savedDate
         }
         
@@ -82,11 +85,13 @@ class ZipzClusters: ZipzSDK
         }
     }
     
-    public func get(for uuid: String, completion: @escaping (_ clusters: Cluster?, _ error: String?)->())
-    {
+    public func get(for uuid: String,
+                    fetch: FetchType = .update,
+                    completion: @escaping (_ clusters: Cluster?, _ error: String?)->()) {
+        
         var parameters: [String:Any] = ["uuid":uuid]
         
-        if let savedDate = SavedDefaults.getLastCallTime(for: "venue_cluster_details") {
+        if let savedDate = SavedDefaults.getLastCallTime(for: "venue_cluster_details"), fetch == .update {
             parameters["datetime"] = savedDate
         }
         

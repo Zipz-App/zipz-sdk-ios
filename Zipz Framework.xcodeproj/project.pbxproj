@@ -18,6 +18,9 @@
 		D147F58F243A5B400075AA60 /* Zipz_FrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F58E243A5B400075AA60 /* Zipz_FrameworkUITests.swift */; };
 		D147F59D243A720E0075AA60 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F59C243A720E0075AA60 /* PermissionViewController.swift */; };
 		D147F59F243A7E190075AA60 /* ClustersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147F59E243A7E190075AA60 /* ClustersTableViewController.swift */; };
+		D1A3B8EA24EADC2C00D2B0B8 /* ZipzSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */; };
+		D1A3B8EF24EADC2C00D2B0B8 /* ZipzSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A3B8EE24EADC2C00D2B0B8 /* ZipzSDKTests.swift */; };
+		D1A3B8F124EADC2C00D2B0B8 /* ZipzSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A3B8E324EADC2C00D2B0B8 /* ZipzSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1CEF12224E30AB600D12E7B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */; };
 		D1CEF12324E30AB600D12E7B /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */; };
 		D1CEF12424E30AB600D12E7B /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */; };
@@ -83,6 +86,13 @@
 			remoteGlobalIDString = D147F565243A5B3D0075AA60;
 			remoteInfo = "Zipz Framework";
 		};
+		D1A3B8EB24EADC2C00D2B0B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D147F55E243A5B3D0075AA60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A3B8E024EADC2C00D2B0B8;
+			remoteInfo = ZipzSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +113,12 @@
 		D147F590243A5B400075AA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D147F59C243A720E0075AA60 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		D147F59E243A7E190075AA60 /* ClustersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClustersTableViewController.swift; sourceTree = "<group>"; };
+		D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipzSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A3B8E324EADC2C00D2B0B8 /* ZipzSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipzSDK.h; sourceTree = "<group>"; };
+		D1A3B8E424EADC2C00D2B0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1A3B8E924EADC2C00D2B0B8 /* ZipzSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipzSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A3B8EE24EADC2C00D2B0B8 /* ZipzSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipzSDKTests.swift; sourceTree = "<group>"; };
+		D1A3B8F024EADC2C00D2B0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1CEF0E724E30AB600D12E7B /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		D1CEF0E824E30AB600D12E7B /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		D1CEF0E924E30AB600D12E7B /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
@@ -175,6 +191,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1A3B8DE24EADC2C00D2B0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A3B8E624EADC2C00D2B0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A3B8EA24EADC2C00D2B0B8 /* ZipzSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -202,6 +233,8 @@
 				D147F568243A5B3D0075AA60 /* Zipz Framework */,
 				D147F582243A5B400075AA60 /* Zipz FrameworkTests */,
 				D147F58D243A5B400075AA60 /* Zipz FrameworkUITests */,
+				D1A3B8E224EADC2C00D2B0B8 /* ZipzSDK */,
+				D1A3B8ED24EADC2C00D2B0B8 /* ZipzSDKTests */,
 				D147F567243A5B3D0075AA60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -212,6 +245,8 @@
 				D147F566243A5B3D0075AA60 /* Zipz Framework.app */,
 				D147F57F243A5B400075AA60 /* Zipz FrameworkTests.xctest */,
 				D147F58A243A5B400075AA60 /* Zipz FrameworkUITests.xctest */,
+				D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */,
+				D1A3B8E924EADC2C00D2B0B8 /* ZipzSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +283,24 @@
 				D147F590243A5B400075AA60 /* Info.plist */,
 			);
 			path = "Zipz FrameworkUITests";
+			sourceTree = "<group>";
+		};
+		D1A3B8E224EADC2C00D2B0B8 /* ZipzSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D1A3B8E324EADC2C00D2B0B8 /* ZipzSDK.h */,
+				D1A3B8E424EADC2C00D2B0B8 /* Info.plist */,
+			);
+			path = ZipzSDK;
+			sourceTree = "<group>";
+		};
+		D1A3B8ED24EADC2C00D2B0B8 /* ZipzSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1A3B8EE24EADC2C00D2B0B8 /* ZipzSDKTests.swift */,
+				D1A3B8F024EADC2C00D2B0B8 /* Info.plist */,
+			);
+			path = ZipzSDKTests;
 			sourceTree = "<group>";
 		};
 		D1CEF0E424E30AB600D12E7B /* Zipz SDK */ = {
@@ -387,6 +440,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D1A3B8DC24EADC2C00D2B0B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A3B8F124EADC2C00D2B0B8 /* ZipzSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		D147F565243A5B3D0075AA60 /* Zipz Framework */ = {
 			isa = PBXNativeTarget;
@@ -441,13 +505,49 @@
 			productReference = D147F58A243A5B400075AA60 /* Zipz FrameworkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D1A3B8E024EADC2C00D2B0B8 /* ZipzSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1A3B8F224EADC2C00D2B0B8 /* Build configuration list for PBXNativeTarget "ZipzSDK" */;
+			buildPhases = (
+				D1A3B8DC24EADC2C00D2B0B8 /* Headers */,
+				D1A3B8DD24EADC2C00D2B0B8 /* Sources */,
+				D1A3B8DE24EADC2C00D2B0B8 /* Frameworks */,
+				D1A3B8DF24EADC2C00D2B0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipzSDK;
+			productName = ZipzSDK;
+			productReference = D1A3B8E124EADC2C00D2B0B8 /* ZipzSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1A3B8E824EADC2C00D2B0B8 /* ZipzSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1A3B8F524EADC2C00D2B0B8 /* Build configuration list for PBXNativeTarget "ZipzSDKTests" */;
+			buildPhases = (
+				D1A3B8E524EADC2C00D2B0B8 /* Sources */,
+				D1A3B8E624EADC2C00D2B0B8 /* Frameworks */,
+				D1A3B8E724EADC2C00D2B0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1A3B8EC24EADC2C00D2B0B8 /* PBXTargetDependency */,
+			);
+			name = ZipzSDKTests;
+			productName = ZipzSDKTests;
+			productReference = D1A3B8E924EADC2C00D2B0B8 /* ZipzSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D147F55E243A5B3D0075AA60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Aware;
 				TargetAttributes = {
@@ -461,6 +561,12 @@
 					D147F589243A5B400075AA60 = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = D147F565243A5B3D0075AA60;
+					};
+					D1A3B8E024EADC2C00D2B0B8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D1A3B8E824EADC2C00D2B0B8 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
@@ -480,6 +586,8 @@
 				D147F565243A5B3D0075AA60 /* Zipz Framework */,
 				D147F57E243A5B400075AA60 /* Zipz FrameworkTests */,
 				D147F589243A5B400075AA60 /* Zipz FrameworkUITests */,
+				D1A3B8E024EADC2C00D2B0B8 /* ZipzSDK */,
+				D1A3B8E824EADC2C00D2B0B8 /* ZipzSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -503,6 +611,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D147F588243A5B400075AA60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A3B8DF24EADC2C00D2B0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A3B8E724EADC2C00D2B0B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -589,6 +711,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1A3B8DD24EADC2C00D2B0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A3B8E524EADC2C00D2B0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A3B8EF24EADC2C00D2B0B8 /* ZipzSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -601,6 +738,11 @@
 			isa = PBXTargetDependency;
 			target = D147F565243A5B3D0075AA60 /* Zipz Framework */;
 			targetProxy = D147F58B243A5B400075AA60 /* PBXContainerItemProxy */;
+		};
+		D1A3B8EC24EADC2C00D2B0B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1A3B8E024EADC2C00D2B0B8 /* ZipzSDK */;
+			targetProxy = D1A3B8EB24EADC2C00D2B0B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -674,7 +816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -728,7 +870,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -860,6 +1002,102 @@
 			};
 			name = Release;
 		};
+		D1A3B8F324EADC2C00D2B0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2W4R999L7M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZipzSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.ZipzSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1A3B8F424EADC2C00D2B0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2W4R999L7M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZipzSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.ZipzSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1A3B8F624EADC2C00D2B0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W4R999L7M;
+				INFOPLIST_FILE = ZipzSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.ZipzSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1A3B8F724EADC2C00D2B0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W4R999L7M;
+				INFOPLIST_FILE = ZipzSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.zipz.ZipzSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -895,6 +1133,24 @@
 			buildConfigurations = (
 				D147F59A243A5B400075AA60 /* Debug */,
 				D147F59B243A5B400075AA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1A3B8F224EADC2C00D2B0B8 /* Build configuration list for PBXNativeTarget "ZipzSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A3B8F324EADC2C00D2B0B8 /* Debug */,
+				D1A3B8F424EADC2C00D2B0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1A3B8F524EADC2C00D2B0B8 /* Build configuration list for PBXNativeTarget "ZipzSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A3B8F624EADC2C00D2B0B8 /* Debug */,
+				D1A3B8F724EADC2C00D2B0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

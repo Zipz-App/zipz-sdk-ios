@@ -16,6 +16,12 @@ public enum ClusterType: String
     case campaign = "campaign"
 }
 
+public enum FetchType: Int
+{
+    case all
+    case update
+}
+
 class ZipzSDK: NSObject {
     
 }

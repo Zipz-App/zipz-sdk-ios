@@ -65,16 +65,18 @@ class ClustersTableViewController: UITableViewController
     {
         ZipzClusters().all { clusters, error in
             
-            guard let clusters = clusters, clusters.count > 0 else {
+            DispatchQueue.main.async {
+                guard let clusters = clusters, clusters.count > 0 else {
+                    
+                    debugLog("NO NEW CLUSTERS: \(String(describing: error))")
+                    self.clusters = Cluster.all()
+                    self.tableView.reloadData()
+                    return
+                }
                 
-                debugLog("NO NEW CLUSTERS: \(String(describing: error))")
-                self.clusters = Cluster.all()
+                self.clusters?.append(contentsOf: clusters)
                 self.tableView.reloadData()
-                return
             }
-            
-            self.clusters = clusters
-            self.tableView.reloadData()
         }
     }
 }

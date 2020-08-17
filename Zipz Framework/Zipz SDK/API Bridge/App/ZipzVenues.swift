@@ -12,11 +12,12 @@ class ZipzVenues: ZipzSDK
 {
     private let router = Router<AppAPI>()
     
-    public func all(completion: @escaping (_ venues: [Venue]?, _ error: String?)->())
-    {
+    public func all(fetch: FetchType = .update,
+                    completion: @escaping (_ venues: [Venue]?, _ error: String?)->()) {
+        
         var parameters: [String:Any] = [:]
         
-        if let savedDate = SavedDefaults.getLastCallTime(for: "venues") {
+        if let savedDate = SavedDefaults.getLastCallTime(for: "venues"), fetch == .update {
             parameters["datetime"] = savedDate
         }
         
