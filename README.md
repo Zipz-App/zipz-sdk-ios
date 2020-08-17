@@ -7,7 +7,8 @@ This open-source library allows you to integrate Zipz into your own iOS app.
 
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Zipz SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-```Coming soon...
+```ruby
+   Coming soon...
 ```
 
 ### Manually
