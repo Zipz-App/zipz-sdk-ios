@@ -1,6 +1,8 @@
 # Zipz SDK for iOS
 This open-source library allows you to integrate Zipz into your own iOS app.
 
+
+
 ## Installation
 
 ### Manually
@@ -29,9 +31,9 @@ At the moment the only way to install Zipz SDK. Clone or download [framework](ht
    Coming soon...
 ```
 
-## Add Zipz App ID and App Secret
+### Add Zipz App ID and App Secret
 
-In your project `Info.plist` file add `APP_ID` and `APP_SECRET` keys: 
+To make the SDK identifiable by Zipz servers, the host app must add `APP_ID` and `APP_SECRET` keys to your project's `Info.plist` file: 
 
 ```xml
     <key>APP_ID</key>
@@ -40,4 +42,10 @@ In your project `Info.plist` file add `APP_ID` and `APP_SECRET` keys:
     <string>YOUR_APP_SECRET_STRING</string>
 ```
 By adding those two keys you are now ready to use Zipz SDK framework.
+
+
+
+## Requests/Interactions
+
+For all interactions between the Host App and Zipz SDK, the user requesting the data must be identified. Zipz provides a `uuid` for each user registered on its database.
 
