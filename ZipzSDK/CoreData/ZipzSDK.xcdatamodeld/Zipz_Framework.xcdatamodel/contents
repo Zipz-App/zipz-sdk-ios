@@ -44,7 +44,7 @@
         <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="offerID" optional="YES" attributeType="String"/>
         <attribute name="qrValue" optional="YES" attributeType="String"/>
-        <attribute name="reddemedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="redeemedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="staffName" optional="YES" attributeType="String"/>
         <attribute name="uuid" optional="YES" attributeType="String"/>
         <attribute name="venueID" optional="YES" attributeType="String"/>

@@ -16,7 +16,7 @@ public class Transaction: NSManagedObject, Codable
     @NSManaged private var venueID: String
     @NSManaged private var offerID: String
     @NSManaged public var expirationDate: Date?
-    @NSManaged public var reddemedDate: Date?
+    @NSManaged public var redeemedDate: Date?
     @NSManaged public var staffName: String?
     @NSManaged public var qrValue: String?
     
@@ -83,6 +83,14 @@ public class Transaction: NSManagedObject, Codable
             Offer.save(offer)
             self.offerID = offer.uuid
         }
+        
+        if let expiration = expirationTime {
+            expirationDate = dateFrom(string: expiration)
+        }
+        
+        if let redeemed = redeemedAt {
+            redeemedDate = dateFrom(string: redeemed)
+        }
     }
     
     // MARK: - NSFetchRequest
@@ -95,7 +103,7 @@ public class Transaction: NSManagedObject, Codable
         if let saved = Transaction.fetch(with: new.uuid)
         {
             saved.expirationDate = new.expirationDate
-            saved.reddemedDate = new.reddemedDate
+            saved.redeemedDate = new.redeemedDate
             saved.qrValue = new.qrValue
             saved.staffName = new.staffName
             saved.venueID = new.venueID

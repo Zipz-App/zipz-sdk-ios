@@ -10,8 +10,8 @@ import Foundation
 
 public enum AuthAPI
 {
-    case login(parameters: [String:Any])
-    case register(parameters: [String:Any])
+    case login(parameters: Parameters)
+    case register(parameters: Parameters)
     case advertising(id: String)
 }
 

@@ -10,14 +10,14 @@ import Foundation
 
 public enum AppAPI
 {
-    case venues(parameters: [String:Any])
+    case venues(parameters: Parameters)
     case venueDetails(uuid: String)
-    case clusters(parameters: [String:Any])
-    case clusterDetails(parameters: [String:Any])
+    case clusters(parameters: Parameters)
+    case clusterDetails(parameters: Parameters)
     case offerDetails(uuid: String)
     case reserveOffer(uuid: String)
     case transactions
-    case redeemTransaction(parameters: [String:Any])
+    case redeemTransaction(parameters: Parameters)
 }
 
 extension AppAPI: EndpointProtocol
