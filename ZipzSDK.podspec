@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Zipz"
+  spec.name         = "ZipzSDK"
   spec.version      = "1.0"
   spec.summary      = "This open-source library allows you to integrate Zipz into your own iOS app."
 
@@ -49,7 +49,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Mirko Trkulja" => "mirko@zipz.app" }
+  spec.author             = { "Mirko Trkulja" => "mirko@zipzapp.com" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
