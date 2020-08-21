@@ -10,11 +10,9 @@ import Foundation
 
 struct APIError: Codable
 {
-    let email: String?
-    let password: String?
+    let message: String?
     
-    private enum CodingKeys: String, CodingKey
-    {
-        case email, password
+    private enum CodingKeys: String, CodingKey {
+        case message
     }
 }

@@ -48,7 +48,10 @@ class ZipzAuth
                             
                             guard let user = apiResponse.response.user else {
                                 
-                                completion(nil, nil)
+                                if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                    let error = statusResponse.error?.message
+                                    completion(nil, error)
+                                }
                                 return
                             }
                             
@@ -110,9 +113,16 @@ class ZipzAuth
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
                         
-                        if let user = apiResponse.response.user {
-                             User.save(user)
+                        guard let user = apiResponse.response.user  else {
+                            
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
                         }
+                        
+                        User.save(user)
                         
                         if let ads = apiResponse.response.advertisingIDs {
                             
@@ -163,7 +173,7 @@ class ZipzAuth
             }
             
             
-            guard let responseData = data else {
+            guard let _ = data else {
                 completion(false, NetworkResponse.noData.rawValue)
                 return
             }

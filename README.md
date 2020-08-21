@@ -1,7 +1,6 @@
 # Zipz SDK for iOS
+
 This open-source library allows you to integrate Zipz into your own iOS app.
-
-
 
 ## Installation
 
@@ -291,6 +290,26 @@ Offer details contain all information about the offer itself and the venue relat
 **Error messages:** under development
 
 ## Transactions
+
+Transactions are created when the user reserves an offer on the Offer Details screen. 
+The Transaction starts with the offer reservation and it ends when the user redeems the offers scanning the QR code available at the venue. 
+
+
+### Reserve offer
+
+Reserve offer request starts a transaction and the `transaction` object will be responded. To reserve an `offer` call the following method:
+
+```swift
+
+	// Method requires offer uuid parameter 
+
+	ZipzSDK.reserveOffer(with: uuid) { offer, error in
+
+		// offer response object is optional Offer?
+		// Handle response
+	}
+
+```
 
 ```swift
 

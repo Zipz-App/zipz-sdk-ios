@@ -14,7 +14,6 @@ struct APIStatus: Codable
     let code: Int
     let error: APIError?
     
-    
     private enum CodingKeys: String, CodingKey
     {
         case success, error
