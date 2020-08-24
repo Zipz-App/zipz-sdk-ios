@@ -42,7 +42,10 @@ class ZipzTransactions
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
                         
                         guard let transactions = apiResponse.response.transactions else {
-                            completion(nil, nil)
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
                             return
                         }
                         
@@ -97,7 +100,10 @@ class ZipzTransactions
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
                         
                         guard let transaction = apiResponse.response.transaction else {
-                            completion(nil, nil)
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
                             return
                         }
                         

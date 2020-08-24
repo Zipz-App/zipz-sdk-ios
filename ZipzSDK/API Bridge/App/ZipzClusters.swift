@@ -44,8 +44,17 @@ class ZipzClusters
                         let decoder = JSONDecoder()
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let clusters = apiResponse.response.clusters
-                        clusters?.forEach({ cluster in
+                        
+                        guard let clusters = apiResponse.response.clusters else {
+                            
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
+                        }
+                        
+                        clusters.forEach({ cluster in
                             Cluster.save(cluster)
                         })
                         completion(clusters, nil)
@@ -95,7 +104,15 @@ class ZipzClusters
                         let decoder = JSONDecoder()
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let cluster = apiResponse.response.cluster
+                        
+                        guard let cluster = apiResponse.response.cluster else {
+                            
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
+                        }
                         
                         completion(cluster, nil)
                     }

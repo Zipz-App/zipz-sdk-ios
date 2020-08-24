@@ -44,8 +44,16 @@ class ZipzVenues
                         let decoder = JSONDecoder()
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let venues = apiResponse.response.venues
-                        venues?.forEach({ venue in
+                        
+                        guard let venues = apiResponse.response.venues else {
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
+                        }
+                        
+                        venues.forEach({ venue in
                             Venue.save(venue)
                         })
                         
@@ -92,12 +100,16 @@ class ZipzVenues
                         let decoder = JSONDecoder()
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let venue = apiResponse.response.venue
                         
-                        if let venue = venue {
-                            Venue.save(venue)
+                        guard let venue = apiResponse.response.venue else {
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
                         }
-                
+                        
+                        Venue.save(venue)
                         completion(venue, nil)
                     }
                     catch let error as NSError {

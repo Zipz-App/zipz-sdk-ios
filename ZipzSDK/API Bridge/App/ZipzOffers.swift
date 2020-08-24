@@ -40,12 +40,16 @@ class ZipzOffers
                         let decoder = JSONDecoder()
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let offer = apiResponse.response.offer
-   
-                        if let offer = offer {
-                            Offer.save(offer)
+                        
+                        guard let offer = apiResponse.response.offer else {
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
                         }
-                
+   
+                        Offer.save(offer)
                         completion(offer, nil)
                     }
                     catch let error as NSError {
@@ -89,12 +93,16 @@ class ZipzOffers
                         let decoder = JSONDecoder()
                         let apiResponse = try decoder.decode(APIResponse.self, from: responseData)
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
-                        let offer = apiResponse.response.reserveOffer
                         
-                        if let offer = offer {
-                            Offer.save(offer)
+                        guard let offer = apiResponse.response.reserveOffer else {
+                            if let statusResponse = try? decoder.decode(APIStatus.self, from: responseData) {
+                                let error = statusResponse.error?.message
+                                completion(nil, error)
+                            }
+                            return
                         }
                         
+                        Offer.save(offer)
                         completion(offer, nil)
                     }
                     catch let error as NSError {
