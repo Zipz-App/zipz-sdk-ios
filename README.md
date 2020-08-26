@@ -2,6 +2,8 @@
 
 This open-source library allows you to integrate Zipz into your own iOS app.
 
+<br><br>
+
 ## Installation
 
 ### Manually
@@ -42,7 +44,7 @@ To make the SDK identifiable by Zipz servers, the host app must add `APP_ID` and
 ```
 By adding those two keys you are now ready to use Zipz SDK framework.
 
-
+<br><br>
 
 ## Authorization
 
@@ -98,6 +100,8 @@ An initial request must happen every time a registered user opens the Host App. 
 
 ```
 
+<br><br>
+
 ## Clusters
 
 Clusters are groups of venues defined by parameters to organize screens inside the host app. To access a venue's cluster, the host app must have the permission granted for its `APP_ID`. All venue clusters allowed to the host app and its parameters are available on the **Menu > SDK Settings** inside the Zipz SDK dashboard provided to the client.
@@ -148,6 +152,7 @@ A list of all venue clusters allowed to the host app containing information abou
 
 **Error messages:** under development
 
+
 ### Venue cluster details request
 
 A venue cluster details contain information about the cluster itself (`Cluster` object) and also information about all venues (`Venue` object) assigned to that cluster. To check all properties for (`Venue` object), go to the Venues section of the documentation. To get a specific `cluster` detailed information call the following method:
@@ -165,8 +170,11 @@ A venue cluster details contain information about the cluster itself (`Cluster` 
 
 ```
 
-**Error messages:** under development
+**Error messages:** <br><br>
+Code `404` : "VenueCluster not found" <br>
+Code `422` : "Uuid is required"
 
+<br><br>
 
 ## Venues
 
@@ -227,6 +235,7 @@ A list of all venues allowed to the host app containing information about all ve
 
 **Error messages:** under development
 
+
 ### Venue details request
 
 A `Venue` object contains all the information about the venue itself and also the information from all offers assigned to that venue. Offers can be **public** or **private** and that is decided by the merchant when creating a coupon. Public Offers are available for all users, and private offers are for a specific audience based on the user behavior. To get a specific `venue` detailed information call the following method:
@@ -243,7 +252,10 @@ A `Venue` object contains all the information about the venue itself and also th
 	
 ```
 
-**Error messages:** under development
+**Error messages:** <br><br>
+Code `422` : "Uuid is required"
+
+<br><br>
 
 ## Offers
 
@@ -287,7 +299,10 @@ Offer details contain all information about the offer itself and the venue relat
 
 ```
 
-**Error messages:** under development
+**Error messages:** <br><br>
+Code `422` : "Uuid is required"
+
+<br><br>
 
 ## Transactions
 
@@ -310,7 +325,39 @@ Reserve offer request starts a transaction and the `transaction` object will be 
 	}
 
 ```
+**Error messages:** <br><br>
+Code `422` : "Uuid is required"
+
+<br>
+
+### Redeem offer
+
+Before redeeming an offer one first needs to be reserved. When redeeming scanned QR code string and offer `uuid` are sent as parameters in the following method:
 
 ```swift
 
+	// Method requires scanned QR code string 
+	// and reserved offer uuid parameter 
+
+	ZipzSDK.redeemOffer(with: qrcode, uuid: uuid) { transaction, error in
+
+		// redeemOffer response object is optional Transaction?
+		// Handle response
+	}
+
 ```
+
+### All transactions
+
+To get all past user transactions call the following method:
+
+```swift
+
+	ZipzSDK.allTransactions() { transactions, error in
+
+		// response object is optional array [Transaction]?
+		// Handle response
+	}
+
+```
+
